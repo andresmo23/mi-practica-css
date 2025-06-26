@@ -1,0 +1,44 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  text-transform: uppercase;
+  font-weight: bold;
+  height: 100vh;
+  text-align: center;
+}
+
+.grid-container {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: 20% 1fr 20%;
+  grid-template-rows: 20% 1fr 20%;
+  gap: 5px;
+}
+
+header {
+  background-color: red;
+  grid-column: 1 / 4;
+}
+
+nav {
+  background-color: yellow;
+}
+
+main {
+  background-color: brown;
+}
+
+aside {
+  background-color: #742074;
+}
+
+footer {
+  background-color: yellowgreen;
+  grid-column: 1 / 4;
+}
